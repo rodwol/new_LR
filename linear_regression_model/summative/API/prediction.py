@@ -8,7 +8,7 @@ import os
 
 # Load the best model
 model_path = os.path.join(os.path.dirname(__file__), "best_model.pkl")
-model = joblib.load("best_model.pkl")
+model = joblib.load(model_path)
 
 # Initialize FastAPI app
 app = FastAPI(title="Toxic Waste Prediction API")
