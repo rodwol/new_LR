@@ -3,6 +3,8 @@ from pydantic import BaseModel, Field
 from fastapi.middleware.cors import CORSMiddleware
 import joblib
 import numpy as np
+import os
+
 
 # Load the best model
 model_path = os.path.join(os.path.dirname(__file__), "best_model.pkl")
