@@ -5,7 +5,7 @@ import joblib
 import numpy as np
 
 # Load the best model
-model = joblib.load('../models/best_model.pkl')
+model = joblib.load('../API/best_model.pkl')
 
 # Initialize FastAPI app
 app = FastAPI(title="Toxic Waste Prediction API")
