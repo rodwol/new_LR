@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: toxic-waste-api
+    env: python
+    plan: free
+    buildCommand: ./summative/API/build.sh
+    startCommand: uvicorn prediction:app --host 0.0.0.0 --port 10000
+    workingDir: summative/API
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13
