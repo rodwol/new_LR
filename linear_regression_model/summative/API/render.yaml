@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: my-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m uvicorn linear_regression_model.summative.API.prediction:app --host 0.0.0.0 --port 10000
