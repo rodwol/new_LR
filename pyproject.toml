@@ -1,3 +1,0 @@
-[tool.poetry.dependencies]
-fastapi = "^0.110.0"
-uvicorn = "^0.23.2"
