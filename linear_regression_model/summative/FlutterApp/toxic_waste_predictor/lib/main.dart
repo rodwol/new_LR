@@ -6,6 +6,8 @@ void main() {
 }
 
 class ToxicWastePredictorApp extends StatelessWidget {
+  const ToxicWastePredictorApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

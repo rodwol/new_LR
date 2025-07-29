@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ResultPage extends StatelessWidget {
   final Map<String, String> inputData;
 
-  ResultPage({required this.inputData});
+  const ResultPage({super.key, required this.inputData});
 
   @override
   Widget build(BuildContext context) {

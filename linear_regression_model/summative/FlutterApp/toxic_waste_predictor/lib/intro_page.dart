@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'input_page.dart';
 
 class IntroPage extends StatelessWidget {
+  const IntroPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,12 +57,12 @@ class IntroPage extends StatelessWidget {
                     MaterialPageRoute(builder: (_) => InputPage()),
                   );
                 },
-                child: Text("Start Prediction"),
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.symmetric(horizontal: 32, vertical: 14),
                   textStyle: TextStyle(fontSize: 16),
                   backgroundColor: const Color.fromARGB(255, 28, 221, 199),
                 ),
+                child: Text("Start Prediction"),
               ),
             ),
           ],

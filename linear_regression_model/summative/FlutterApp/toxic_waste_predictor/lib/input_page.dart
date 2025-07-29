@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'result_page.dart';
 
 class InputPage extends StatefulWidget {
+  const InputPage({super.key});
+
   @override
   _InputPageState createState() => _InputPageState();
 }
@@ -172,11 +174,11 @@ class _InputPageState extends State<InputPage> {
               SizedBox(height: 24),
               ElevatedButton(
                 onPressed: _onPredictPressed,
-                child: Text("Predict"),
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.symmetric(horizontal: 40, vertical: 16),
                   textStyle: TextStyle(fontSize: 16),
                 ),
+                child: Text("Predict"),
               ),
             ],
           ),
