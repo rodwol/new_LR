@@ -136,7 +136,7 @@ linear_regression_model/
 
 ## Demo Video
 
-[YouTube Demo (5 mins)](https://youtube.com/your_demo_link_here)
+[Demo (5 mins)](https://www.canva.com/design/DAGuhRQChfY/3ShJka-8cluUOac2GdTtpQ/edit?utm_content=DAGuhRQChfY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ---
 
