@@ -1,4 +1,3 @@
-#!/bin/bash
-pip install --upgrade pip
-pip install wheel
-pip install --no-cache-dir -r requirements.txt
+#!/usr/bin/env bash
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
