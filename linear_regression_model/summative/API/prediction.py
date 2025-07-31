@@ -1,14 +1,17 @@
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
 from fastapi.middleware.cors import CORSMiddleware
-import joblib
 import numpy as np
 import os
+import cloudpickle
 
-
-# Load the best model
+# Load the best model using cloudpickle
 model_path = os.path.join(os.path.dirname(__file__), "best_model.pkl")
-model = joblib.load(model_path)
+if not os.path.exists(model_path):
+    raise FileNotFoundError(f"❌ Model file not found at {model_path}")
+
+with open(model_path, "rb") as f:
+    model = cloudpickle.load(f)
 
 # Initialize FastAPI app
 app = FastAPI(title="Toxic Waste Prediction API")
