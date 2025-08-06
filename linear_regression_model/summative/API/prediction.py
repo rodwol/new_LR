@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from pydantic import BaseModel, Field
 from fastapi.middleware.cors import CORSMiddleware
 import numpy as np
@@ -28,15 +28,15 @@ app.add_middleware(
 # Input data schema using Pydantic
 class InputData(BaseModel):
     Country: int = Field(..., ge=0, le=10)
-    Latitude: float = Field(..., ge=-3, le=3)
-    Longitude: float = Field(..., ge=-3, le=3)
+    Latitude: float = Field(..., ge=-90, le=90)
+    Longitude: float = Field(..., ge=-180, le=180)
     Dumping_Entity: int = Field(..., ge=0, le=10)
     Legal_Actions: int = Field(..., ge=0, le=5)
-    Year: float = Field(..., ge=-3, le=3)
+    Year: float = Field(..., ge=1900, le=2100)
     Waste_Type: int = Field(..., ge=0, le=10)
 
 # Root endpoint
-@app.get("/")
+@app.post("/")
 def read_root():
     return {"message": "Welcome to the Toxic Waste Prediction API"}
 
