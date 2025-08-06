@@ -36,7 +36,7 @@ class InputData(BaseModel):
     Waste_Type: int = Field(..., ge=0, le=10)
 
 # Root endpoint
-@app.post("/")
+@app.get("/")
 def read_root():
     return {"message": "Welcome to the Toxic Waste Prediction API"}
 
