@@ -156,7 +156,7 @@ linear_regression_model/
 
 ### Run the API (Locally)
 ```bash
-cd summative/API
+cd linear_regression_model/summative/API
 pip install -r requirements.txt
 uvicorn prediction:app --reload
 ```
@@ -168,7 +168,7 @@ uvicorn prediction:app --reload
 
 ### Run Flutter App
 ```bash
-cd summative/FlutterApp
+cd /linear_regression_model/summative/FlutterApp
 flutter pub get
 flutter run
 ```
