@@ -102,7 +102,7 @@ linear_regression_model/
 
 ## API Endpoint (FastAPI)
 
-- **Base URL**: `https://<your-app-name>.onrender.com`
+- **Base URL**:
 - **Method**: `POST /predict`
 - **Input**:
 ```json
